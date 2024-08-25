@@ -1,7 +1,5 @@
 import About from "../Components/About/About"
 import AppBanner from "../Components/AppBanner/AppBanner"
-import Contact from "./Contact"
-import Footer from "../Components/Footer/Footer"
 import Hero from "../Components/Hero/Hero"
 import { Marquee } from "../Components/Marquee"
 import Pricing from "../Components/Pricing/Pricing"
@@ -16,7 +14,6 @@ const HomePage = () => {
       <Pricing classname="w-full" />
       <Testimonials />
       <AppBanner />
-      <Footer />
     </div>
   )
 }
