@@ -1,6 +1,6 @@
 import About from "../Components/About/About"
 import AppBanner from "../Components/AppBanner/AppBanner"
-import Contact from "../Components/Contact/Contact"
+import Contact from "./Contact"
 import Footer from "../Components/Footer/Footer"
 import Hero from "../Components/Hero/Hero"
 import { Marquee } from "../Components/Marquee"

@@ -25,6 +25,7 @@ export default {
 
       colors: {
         primary: "#47209A",
+        
         dark: "#111111",
         SecondaryColor: "#6B4EDB",//(A darker purple for accents)
         Background: "#F8F4FF",//(A very light purple / white)

@@ -70,6 +70,7 @@ const Navbar = () => {
                     <Link to="/" className="block py-2 hover:text-primary transition" onClick={() => setIsDesktopMenuOpen(false)}>Home</Link>
                     <Link to="/products" className="block py-2 hover:text-primary transition" onClick={() => setIsDesktopMenuOpen(false)}>Products</Link>
                     <Link to="/about" className="block py-2 hover:text-primary transition" onClick={() => setIsDesktopMenuOpen(false)}>About Us</Link>
+                    <Link to="/Contact" className="block py-2 hover:text-primary transition" onClick={() => setIsDesktopMenuOpen(false)}>Contact Us</Link>
                 </div>
 
                 {/* Icons */}
