@@ -64,7 +64,8 @@ const Navbar = ({ cartItems, onRemoveFromCart }) => {
                         )}
                     </button>
                     <Link to="/profile">
-                        <FaUser className="text-2xl hover:text-primary" />
+                        <FaUser className=" text-2xl hover:text-primary mr-11 ml-0 sm:mr-0" />
+                        <FaUser className=" text-2xl hover:text-primary sm:hidden hidden" />
                     </Link>
                     <FaBars className="text-2xl hover:text-primary hidden md:block" onClick={() => setIsDesktopMenuOpen(!isDesktopMenuOpen)} />
                 </div>
@@ -93,7 +94,7 @@ const Navbar = ({ cartItems, onRemoveFromCart }) => {
 
                 {/* Cart Menu */}
                 {isCartMenuOpen && (
-                    <div className="fixed z-50 ">
+                    <div className="fixed z-50 mr-0 mx-auto ">
                         <Cart
                             cartItems={cartItems}
                             onClose={() => setIsCartMenuOpen(false)}
