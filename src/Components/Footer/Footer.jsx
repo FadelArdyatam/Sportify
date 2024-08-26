@@ -39,27 +39,27 @@ const Footer = () => {
           <div className="mb-8 md:mb-0">
             <h2 className="text-lg font-semibold mb-4">Socials</h2>
             <ul>
-              <li><a href="#" className="hover:text-gray-400">Facebook</a></li>
-              <li><a href="#" className="hover:text-gray-400">Twitter</a></li>
-              <li><a href="#" className="hover:text-gray-400">Dribble</a></li>
-              <li><a href="#" className="hover:text-gray-400">Instagram</a></li>
+              <li><a href="#" className="hover:text-SecondaryColor">Facebook</a></li>
+              <li><a href="#" className="hover:text-SecondaryColor">Twitter</a></li>
+              <li><a href="#" className="hover:text-SecondaryColor">Dribble</a></li>
+              <li><a href="#" className="hover:text-SecondaryColor">Instagram</a></li>
             </ul>
           </div>
 
           <div className="mb-8 md:mb-0">
             <h2 className="text-lg font-semibold mb-4">Menu</h2>
             <ul>
-              <li><a href="#" className="hover:text-gray-400">Home</a></li>
-              <li><a href="#" className="hover:text-gray-400">Services</a></li>
-              <li><a href="#" className="hover:text-gray-400">About Us</a></li>
-              <li><a href="#" className="hover:text-gray-400">Shop</a></li>
-              <li><a href="#" className="hover:text-gray-400">Contacts</a></li>
+              <li><a href="#" className="hover:text-SecondaryColor">Home</a></li>
+              <li><a href="#" className="hover:text-SecondaryColor">Services</a></li>
+              <li><a href="#" className="hover:text-SecondaryColor">About Us</a></li>
+              <li><a href="#" className="hover:text-SecondaryColor">Shop</a></li>
+              <li><a href="#" className="hover:text-SecondaryColor">Contacts</a></li>
             </ul>
           </div>
 
           <div>
             <h2 className="text-lg font-semibold mb-4">Say Hello</h2>
-            <p><a href="mailto:info@email.com" className="hover:text-gray-400">ardyatamafadel68@gmail.com</a></p>
+            <p><a href="mailto:info@email.com" className="hover:text-SecondaryColor">ardyatamafadel68@gmail.com</a></p>
           </div>
         </div>
       </div>

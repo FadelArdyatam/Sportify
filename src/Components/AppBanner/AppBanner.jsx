@@ -1,9 +1,8 @@
 import { motion } from 'framer-motion';
 import Bannerimg from '../../assets/AppBanner.png';
-import { FaAppStore, FaAppStoreIos } from 'react-icons/fa';
 import { IoLogoGooglePlaystore } from 'react-icons/io5';
-import { PiAppStoreLogoFill } from 'react-icons/pi';
-import { TbBrandAppstore } from 'react-icons/tb';
+import { FaAppStoreIos } from 'react-icons/fa';
+
 
 const BgStyle = {
     backgroundImage: `url(${Bannerimg})`,
@@ -29,7 +28,7 @@ const AppBanner = () => {
                     <div className='w-full md:w-[800px] mx-auto gap-2 justify-center'>
                         <p className=' text-primary text-2xl'>Start Your Fitness Journey</p>
                         <h1 className='text-5xl md:text-7xl font-bold dark:text-white mb-2'>Your Fitness Journey Begins!</h1>
-                        <p className='dark:text-white font-serif'>The body achieves what the mind believes</p>
+                        <p className='dark:text-white font-serif text-white'>The body achieves what the mind believes</p>
                         <motion.button
                             className='primary-btn'
                             whileHover={{ scale: 1.1 }}

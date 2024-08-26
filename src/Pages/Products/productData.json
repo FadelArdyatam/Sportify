@@ -94,6 +94,54 @@
           "Ideal for competitive play"
         ],
         "details": "Our professional badminton rackets are available for daily rental. Lightweight and easy to handle, they are perfect for players of all levels."
+      },
+      {
+        "id": 7,
+        "name": "Badminton Racket Rental",
+        "price": "$7.00 / day",
+        "imageUrl": "https://ae01.alicdn.com/kf/HTB12sbPPXXXXXXXapXXq6xXFXXXs/2017-Black-Badminton-Racket-Professional-Speed-Offensive-And-Defensive-Type-High-Quality-4U-Ultra-Light-Badminton.jpg",
+        "status": "Available",
+        "type": "rental",
+        "description": "Professional badminton rackets for rent.",
+        "features": [
+          "Ultra-lightweight design",
+          "High-tension strings",
+          "Ergonomic grip",
+          "Ideal for competitive play"
+        ],
+        "details": "Our professional badminton rackets are available for daily rental. Lightweight and easy to handle, they are perfect for players of all levels."
+      },
+      {
+        "id": 8,
+        "name": "Badminton Racket Rental",
+        "price": "$7.00 / day",
+        "imageUrl": "https://ae01.alicdn.com/kf/HTB12sbPPXXXXXXXapXXq6xXFXXXs/2017-Black-Badminton-Racket-Professional-Speed-Offensive-And-Defensive-Type-High-Quality-4U-Ultra-Light-Badminton.jpg",
+        "status": "Available",
+        "type": "rental",
+        "description": "Professional badminton rackets for rent.",
+        "features": [
+          "Ultra-lightweight design",
+          "High-tension strings",
+          "Ergonomic grip",
+          "Ideal for competitive play"
+        ],
+        "details": "Our professional badminton rackets are available for daily rental. Lightweight and easy to handle, they are perfect for players of all levels."
+      },
+      {
+        "id": 9,
+        "name": "Badminton Racket Rental",
+        "price": "$7.00 / day",
+        "imageUrl": "https://ae01.alicdn.com/kf/HTB12sbPPXXXXXXXapXXq6xXFXXXs/2017-Black-Badminton-Racket-Professional-Speed-Offensive-And-Defensive-Type-High-Quality-4U-Ultra-Light-Badminton.jpg",
+        "status": "Available",
+        "type": "rental",
+        "description": "Professional badminton rackets for rent.",
+        "features": [
+          "Ultra-lightweight design",
+          "High-tension strings",
+          "Ergonomic grip",
+          "Ideal for competitive play"
+        ],
+        "details": "Our professional badminton rackets are available for daily rental. Lightweight and easy to handle, they are perfect for players of all levels."
       }
     
   ]

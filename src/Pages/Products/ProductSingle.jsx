@@ -1,5 +1,15 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import productsData from './productData.json';
+
+const ProductSingle = ({ onAddToCart }) => {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const product = productsData.find(p => p.id === parseInt(id));
+
+  if (!product) {
+    return <p>Product not found!</p>;
+  }
+
 
 const customerReviews = [
   {
@@ -19,14 +29,10 @@ const customerReviews = [
   }
 ];
 
-
-const ProductSingle = () => {
-  const { id } = useParams();
-  const product = productsData.find(p => p.id === parseInt(id));
-
-  if (!product) {
-    return <p>Product not found!</p>;
-  }
+  const handleBuyNow = () => {
+    onAddToCart(product);  // Add selected product to cart
+    navigate('/Checkout');  // Navigate to checkout page
+  };
 
   return (
     <div className="my-7 py-10 bg-gray-white dark:bg-dark text-black dark:text-white">
@@ -35,7 +41,7 @@ const ProductSingle = () => {
           {/* Product Image */}
           <div className="lg:w-1/2">
             <img
-              className="items-center w-full h-96 object-cover sm:rounded-lg rounded-t-xl lg:rounded-l-lg"
+              className="items-center w-full h-full object-cover sm:rounded-lg rounded-t-xl lg:rounded-l-lg"
               src={product.imageUrl}
               alt={product.name}
             />
@@ -65,46 +71,31 @@ const ProductSingle = () => {
               </div>
             </div>
 
-            <div>
-              <div className="flex items-center justify-between mb-6">
-                <span className="text-2xl font-semibold">{product.price}</span>
-                <button className="primary-btn">Buy Now</button>
-              </div>
-
-              <div className="mb-6">
-                <h3 className="text-xl font-bold mb-2">Product Features</h3>
-                <ul className="list-disc pl-5 space-y-1 text-gray-400">
-                  {product.features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
-                  ))}
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold mb-2">Product Details</h3>
-                <p className="text-gray-400">
-                  {product.details}
-                </p>
-              </div>
+            <div className="flex items-center justify-between mb-6">
+              <span className="text-2xl font-semibold">{product.price}</span>
+              <button 
+                className="primary-btn" 
+                onClick={handleBuyNow}
+              >
+                Buy Now
+              </button>
             </div>
-          </div>
-        </div>
 
-        {/* Customer Reviews */}
-        <div className="max-w-7xl mx-auto bg-white dark:bg-black rounded-lg shadow-lg mt-8 p-6">
-          <h3 className="text-2xl font-bold mb-4">Customer Reviews</h3>
-          <div className="space-y-4">
-            {customerReviews.map((review, index) => (
-              <div key={index} className="bg-primary/50 p-4 rounded-lg">
-                <p className="text-lg font-semibold">{review.name}</p>
-                <p className="text-gray-400">
-                  {"⭐".repeat(review.rating)}
-                </p>
-                <p className="text-black dark:text-gray-400 mt-2">
-                  "{review.review}"
-                </p>
-              </div>
-            ))}
+            <div className="mb-6">
+              <h3 className="text-xl font-bold mb-2">Product Features</h3>
+              <ul className="list-disc pl-5 space-y-1 text-gray-400">
+                {product.features.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold mb-2">Product Details</h3>
+              <p className="text-gray-400">
+                {product.details}
+              </p>
+            </div>
           </div>
         </div>
       </div>
