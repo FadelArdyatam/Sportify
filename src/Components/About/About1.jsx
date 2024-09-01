@@ -1,7 +1,7 @@
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
-import Bannerimg from '../../assets/man.png';
+import Bannerimg from '../../assets/about1.png';
 import { slideLeft } from '../../Utility/animation';
 
 const About1 = () => {
@@ -50,19 +50,19 @@ const About1 = () => {
                             </div>
                             <div className='items-center gap-4'>
                                 <p className='text-primary'>Global Fitness</p>
-                                <h1 className='text-2xl sm:text-4xl font-bold'>About Us</h1>
+                                <h1 className='text-2xl sm:text-4xl font-bold'>Voley Center</h1>
                             </div>
                         </div>
                         {/* Bottom Section */}
                         <div>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quidem.
-                                asprenatur, magnam tenetur odio quo et molestias
-                                Lorem {" "}
+                                Kami menyediakan raket dan shuttlecock terbaik untuk setiap pertandingan.
+Sewa perlengkapan dari kami dan nikmati permainan tanpa kendala.
+sewa bolanya di lokasi tempatmu bermain dan dapatan diskonnya, atau kamu
+bisa membelinya di store kami yang terpercaya keunggulannya. {" "}
                                 <br />
                                 <br />
-                                dolor sit amet consectetur adipisicing elit.
-                                sequi, tempora
+                                
                             </p>
                         </div>
                         <button className='outline-btn'>Get Started</button>
