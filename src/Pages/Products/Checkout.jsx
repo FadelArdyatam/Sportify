@@ -38,7 +38,7 @@ const Checkout = ({ cartItems }) => {
           </div>
 
           {/* Checkout Form */}
-          <div className="w-full sm:w-1/2 bg-white p-6">
+          <div className="w-full sm:w-1/2 bg-white p-6 text-black">
             <ProgressBar />
             <h2 className="text-2xl font-bold mb-6">Checkout</h2>
             <form>

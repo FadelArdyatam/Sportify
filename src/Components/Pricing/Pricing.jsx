@@ -1,7 +1,7 @@
 const PricingData = [
   {
     name: "Gold Card",
-    price: 499,
+    price: "Rp.150.000",
     link: "#",
     description: [
       "Monthly access to fitness area.",
@@ -14,7 +14,7 @@ const PricingData = [
   },
   {
     name: "Flexible Card",
-    price: 899,
+    price: "Rp.250.000",
     link: "#",
     description: [
       "Monthly access to fitness area.",
@@ -27,7 +27,7 @@ const PricingData = [
   },
   {
     name: "Platinum Card",
-    price: 1999,
+    price: "Rp.400.000",
     link: "#",
     description: [
       "Monthly access to fitness area.",

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaShoppingCart, FaUser, FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Darkmode from './Darkmode';
@@ -8,10 +8,37 @@ const Navbar = ({ cartItems, onRemoveFromCart }) => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isDesktopMenuOpen, setIsDesktopMenuOpen] = useState(false);
     const [isCartMenuOpen, setIsCartMenuOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(true); // New state to control visibility
+    const [lastScrollY, setLastScrollY] = useState(0); // New state to track last scroll position
     const cartItemCount = cartItems.reduce((count, item) => count + item.quantity, 0);
 
+    // Effect to handle navbar visibility based on scroll position
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY) {
+                // User is scrolling down
+                setIsVisible(false);
+            } else {
+                // User is scrolling up
+                setIsVisible(true);
+            }
+
+            setLastScrollY(currentScrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [lastScrollY]);
+
     return (
-        <nav className="bg-white text-black dark:text-white dark:bg-black shadow-md flex">
+        <nav
+            className={`bg-white text-black dark:text-white dark:bg-black shadow-md flex fixed w-full top-0 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'} z-50`}
+        >
             <div className="container mx-auto flex items-center justify-between p-4 relative">
                 {/* Logo */}
                 <div className="flex items-center gap-2">
@@ -72,7 +99,7 @@ const Navbar = ({ cartItems, onRemoveFromCart }) => {
 
                 {/* Desktop Menu Pop-up */}
                 <div
-                    className={`fixed top-0 right-0 bg-gray-900 text-white p-4 h-full w-3/4 md:w-1/4 transform transition-transform duration-300 ${isDesktopMenuOpen ? 'translate-x-0' : 'translate-x-full'} hidden md:block z-50`}
+                    className={`fixed top-0 right-0 bg-gray-900 text-white p-4 h-lvh w-3/4 md:w-1/4 transform transition-transform duration-300 ${isDesktopMenuOpen ? 'translate-x-0' : 'translate-x-full'} hidden md:block z-50`}
                 >
                     <div className="flex justify-end mb-4">
                         <button
