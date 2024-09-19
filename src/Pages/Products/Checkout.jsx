@@ -48,17 +48,17 @@ const Checkout = ({ cartItems }) => {
                   <input
                     type="text"
                     placeholder="Street Address"
-                    className="border p-2 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="border text-black p-2 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
                   />
                   <input
                     type="text"
                     placeholder="City"
-                    className="border p-2 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="border text-black p-2 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
                   />
                   <input
                     type="text"
                     placeholder="Zip Code"
-                    className="border p-2 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="border text-black p-2 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
                   />
                 </div>
               )}
@@ -68,17 +68,17 @@ const Checkout = ({ cartItems }) => {
                   <input
                     type="text"
                     placeholder="Card Number"
-                    className="border p-2 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="border text-black p-2 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
                   />
                   <input
                     type="text"
                     placeholder="Expiry Date"
-                    className="border p-2 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="border text-black p-2 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
                   />
                   <input
                     type="text"
                     placeholder="CVV"
-                    className="border p-2 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="border text-black p-2 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
                   />
                 </div>
               )}
